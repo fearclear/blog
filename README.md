@@ -1,6 +1,6 @@
 # blog
 
-> my blog
+> My well-made Nuxt.js project
 
 ## Build Setup
 
@@ -19,4 +19,4 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

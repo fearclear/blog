@@ -1,8 +1,5 @@
 module.exports = {
   root: true,
-  rules: {
-    "no-console": "off"
-  },
   env: {
     browser: true,
     node: true
@@ -11,7 +8,10 @@ module.exports = {
     parser: 'babel-eslint'
   },
   extends: [
-    "eslint:recommended",
-    "plugin:vue/recommended",
-  ]
+    '@nuxtjs',
+    'plugin:nuxt/recommended'
+  ],
+  // add your custom rules here
+  rules: {
+  }
 }

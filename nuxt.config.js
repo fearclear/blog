@@ -23,21 +23,27 @@ export default {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'iview/dist/styles/iview.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/iview'
+  ],
+  /*
+  ** Nuxt.js dev-modules
+  */
+  buildModules: [
+    // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/axios'
   ],
   /*
   ** Axios module configuration
@@ -49,11 +55,12 @@ export default {
   ** Build configuration
   */
   build: {
-    transpile: [/^element-ui/],
+    transpile: [/^iview/],
+    vendor: ['axios'],
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+    extend (config, ctx) {
     }
   }
 }
