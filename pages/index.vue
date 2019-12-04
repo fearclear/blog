@@ -20,6 +20,11 @@
         </Button>
       </div>
     </div>
+    <div>
+      <NuxtLink :to="'/about'">
+        跳转到about
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
@@ -28,6 +33,13 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  asyncData() {
+    return new Promise((resolve) => {
+      setTimeout(function() {
+        resolve({})
+      }, 3000)
+    })
   }
 }
 </script>
@@ -42,8 +54,8 @@ export default {
   text-align: center;
 }
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;

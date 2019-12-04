@@ -5,7 +5,7 @@
   "author": "fearclear",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "set NODE_PATH=packages &nuxt --port=3033",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -17,7 +17,10 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "iview": "^3.1.5",
-    "nuxt": "^2.0.0"
+    "nprogress": "^0.2.0",
+    "nuxt": "^2.0.0",
+    "tiptap": "^1.26.4",
+    "tiptap-extensions": "^1.28.4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
